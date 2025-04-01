@@ -14,10 +14,15 @@
 
         <yourLocalKafkaPath>/bin/kafka-server-start.sh/bat ../config/server.properties
 
+- **Create Kafka Tipocs**
+
+		<yourLocalKafkaPath>/bin/kafka-topics.sh --create --topic input-topic --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+
+		<yourLocalKafkaPath>/bin/kafka-topics.sh --create --topic output-topic --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+
 - **Enable MongoDB And MongoShell**
 
           <yourLocalMongoPath>/bin/mongod.exe  --dbpath ../data/db
-
 # Build Java Application 
 
         mvn clean package
