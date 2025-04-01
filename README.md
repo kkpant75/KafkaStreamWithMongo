@@ -31,4 +31,20 @@
 **Execute Java Application Using Below Command on Prompt or Use Eclipse Run**
     
 
-        java -cp target\KafkaStream-0.0.1-SNAPSHOT.jar KafkaStreamExample
+		java -cp target\KafkaStream-0.0.1-SNAPSHOT.jar KafkaStreamExample
+		
+# List Kafka Topics
+*List Kafka Topics In Local Box*
+
+		kafka-topics.sh --bootstrap-server kafka:9093 --list
+
+# Kafka Console Producer
+
+*Execute Console Producer*
+
+	    kafka-console-producer.sh --bootstrap-server kafka:9093 --topic input-topic
+
+# Kafka Console Consumer
+*Execute Console Consumer*
+
+	    kafka-console-consumer.sh --bootstrap-server kafka:9093 --topic output-topic
