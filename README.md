@@ -14,7 +14,7 @@
 
         <yourLocalKafkaPath>/bin/kafka-server-start.sh/bat ../config/server.properties
 
-- **Create Kafka Tipocs**
+- **Create Kafka Topics**
 
 		<yourLocalKafkaPath>/bin/kafka-topics.sh --create --topic input-topic --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 
